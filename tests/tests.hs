@@ -9,8 +9,8 @@ import qualified Tests.Regression    as Regression
 import qualified Tests.Transform     as Transform
 
 
-main :: IO ()
-main = defaultMain [ Distribution.tests
+main2 :: IO ()
+main2 = defaultMain [ Distribution.tests
                    , Function.tests
                    , KDE.tests
                    , Matrix.tests
@@ -19,3 +19,5 @@ main = defaultMain [ Distribution.tests
                    , Correlation.tests
                    , Regression.tests
                    ]
+
+main = defaultMain [Regression.tests]
